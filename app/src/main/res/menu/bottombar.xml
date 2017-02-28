@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/account"
+        android:title="account"
+        android:icon="@drawable/account"/>
+    <item
+        android:id="@+id/move"
+        android:title="move"
+        android:icon="@drawable/move"/>
+    <item
+        android:id="@+id/qrcode"
+        android:title="qrcode"
+        android:icon="@drawable/code"/>
+    <item
+        android:id="@+id/set"
+        android:title="set"
+        android:icon="@drawable/set"/>
+    <item
+        android:id="@+id/all"
+        android:title="all"
+        android:icon="@drawable/all"/>
+</menu>

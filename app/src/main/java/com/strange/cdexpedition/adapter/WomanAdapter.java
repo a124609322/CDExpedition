@@ -1,6 +1,7 @@
 package com.strange.cdexpedition.adapter;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ import java.util.List;
  */
 
 public class WomanAdapter extends RecyclerView.Adapter<WomanAdapter.ViewHolder> {
+
+    private static final String TAG = "WomanAdapter";
 
     private List<Woman> womanList;
 
@@ -42,6 +45,37 @@ public class WomanAdapter extends RecyclerView.Adapter<WomanAdapter.ViewHolder> 
     @Override
     public int getItemCount() {
         return womanList.size();
+    }
+
+    public void addData(Woman woman) {
+        womanList.add(woman);
+        notifyDataSetChanged();
+    }
+
+    public void removeData(int i) {
+        womanList.remove(i);
+        notifyDataSetChanged();
+    }
+
+    public void refreshData(){
+        womanList.clear();
+        Woman woman = new Woman();
+        woman.setName("美女2");
+        woman.setPhoto(R.drawable.woman2);
+        womanList.add(woman);
+        woman = new Woman();
+        woman.setName("美女2");
+        woman.setPhoto(R.drawable.woman2);
+        womanList.add(woman);
+        woman = new Woman();
+        woman.setName("美女2");
+        woman.setPhoto(R.drawable.woman2);
+        womanList.add(woman);
+        woman = new Woman();
+        woman.setName("美女2");
+        woman.setPhoto(R.drawable.woman2);
+        womanList.add(woman);
+        notifyDataSetChanged();
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {

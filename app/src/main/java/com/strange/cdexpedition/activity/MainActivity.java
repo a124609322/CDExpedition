@@ -22,7 +22,10 @@ import com.strange.cdexpedition.fragment.IndexFragment;
 import com.strange.cdexpedition.fragment.WeiboFragment;
 import com.strange.cdexpedition.fragment.YoukuFragment;
 
-public class MainActivity extends BaseActivity implements BottomNavigationBar.OnTabSelectedListener,View.OnClickListener{
+import org.xutils.view.annotation.ContentView;
+
+@ContentView(value=R.layout.activity_main)
+public class MainActivity extends BaseActivity implements BottomNavigationBar.OnTabSelectedListener {
 
     private boolean isExit = false;
 
@@ -113,11 +116,6 @@ public class MainActivity extends BaseActivity implements BottomNavigationBar.On
 
     @Override
     public void onTabReselected(int position) {
-
-    }
-
-    @Override
-    public void onClick(View v) {
 
     }
 }
